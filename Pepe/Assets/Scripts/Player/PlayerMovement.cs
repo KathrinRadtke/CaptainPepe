@@ -38,6 +38,11 @@ public class PlayerMovement : MonoBehaviour
             currentFacing = Facing.Down;
     }
 
+    public bool IsMoving()
+    {
+        return rb.velocity.magnitude != 0f;
+    }
+
     public Vector3 GetCurrentFacingVectorDirection()
     {
         Vector3 facingVectorDirection = Vector3.zero;
@@ -67,9 +72,9 @@ public class PlayerMovement : MonoBehaviour
 
 public enum Facing
 {
-    None,
-    Right,
-    Left,
-    Up,
-    Down
+    None = 0,
+    Right = 1,
+    Left = 2,
+    Up = 3,
+    Down = 4
 }
