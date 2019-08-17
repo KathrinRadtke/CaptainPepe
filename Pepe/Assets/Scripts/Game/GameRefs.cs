@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameRefs : MonoBehaviour
 {
     private Transform player;
+    private Textbox textbox;
 
     public Transform GetPlayer()
     {
@@ -12,5 +13,15 @@ public class GameRefs : MonoBehaviour
             player = FindObjectOfType<PlayerMovement>().transform;
 
         return player;
+    }
+
+    public Textbox GetTextbox()
+    {
+        if(!textbox)
+        {
+            textbox = FindObjectOfType<Textbox>();
+        }
+
+        return textbox;
     }
 }
