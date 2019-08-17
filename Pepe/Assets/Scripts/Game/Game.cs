@@ -6,6 +6,8 @@ public class Game : MonoBehaviour
 {
     public static Game instance;
 
+    public GameRefs refs;
+
     private void Awake()
     {
         if (!instance)
