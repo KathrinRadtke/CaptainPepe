@@ -52,7 +52,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3597242086990173189}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 2935184756832174268}
   - component: {fileID: 1364325846464490522}
   - component: {fileID: 746473100062190275}
+  - component: {fileID: 3849164082865672448}
   m_Layer: 5
   m_Name: Textbox
   m_TagString: Untagged
@@ -157,6 +158,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3849164082865672448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4602702986652688113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6857ff8914d240999a15c4b3328b681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1697475303956630545}
+  image: {fileID: 746473100062190275}
 --- !u!1 &8960719440296031196
 GameObject:
   m_ObjectHideFlags: 0
