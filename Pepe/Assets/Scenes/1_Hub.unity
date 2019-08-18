@@ -12062,7 +12062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetSceneName: 3_Wrestling
-  targetPlayerPosition: {x: 4, y: 2}
+  targetPlayerPosition: {x: 1.3, y: -1.6}
 --- !u!212 &799688874
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13553,12 +13553,12 @@ PrefabInstance:
     - target: {fileID: 6388117617883953723, guid: 69d773229696abd41b1bb24babcd6bf6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.857
+      value: -2.349
       objectReference: {fileID: 0}
     - target: {fileID: 6388117617883953723, guid: 69d773229696abd41b1bb24babcd6bf6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.951
+      value: -0.074
       objectReference: {fileID: 0}
     - target: {fileID: 6388117617883953723, guid: 69d773229696abd41b1bb24babcd6bf6,
         type: 3}
@@ -13614,6 +13614,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388117618767249879, guid: 69d773229696abd41b1bb24babcd6bf6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.017998159
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388117618767249879, guid: 69d773229696abd41b1bb24babcd6bf6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.098576695
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388117618767249879, guid: 69d773229696abd41b1bb24babcd6bf6,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0090043545
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388117618767249879, guid: 69d773229696abd41b1bb24babcd6bf6,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.08825636
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69d773229696abd41b1bb24babcd6bf6, type: 3}

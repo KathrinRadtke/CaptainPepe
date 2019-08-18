@@ -534,13 +534,11 @@ MonoBehaviour:
   isCurrentlyInteractable: 1
   conditions: []
   lines:
-  - Hallo! Ich bin so durstig. Ein zweizeiliger Text.
-  - Bitte bring mir Luft.
-  - '*enable 0'
-  - '[+Luft]'
-  - Du bekommst eine Flasche Luft.
-  objects:
-  - {fileID: 1236871792}
+  - Ich brauche Luft!
+  - Reine Luft! Dieser Karl hat nur Erdbeerluft!
+  - Das macht mich ganz weich!
+  - Ich kann nicht mal mehr richtig fluchen!
+  objects: []
 --- !u!61 &149013633
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4220,13 +4218,8 @@ MonoBehaviour:
   isCurrentlyInteractable: 1
   conditions: []
   lines:
-  - Hallo! Ich bin so durstig. Ein zweizeiliger Text.
-  - Bitte bring mir Luft.
-  - '*enable 0'
-  - '[+Luft]'
-  - Du bekommst eine Flasche Luft.
-  objects:
-  - {fileID: 1236871792}
+  - Ich kann Musik auf meiner Nase machen
+  objects: []
 --- !u!212 &560192129
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5380,13 +5373,8 @@ MonoBehaviour:
   isCurrentlyInteractable: 1
   conditions: []
   lines:
-  - Hallo! Ich bin so durstig. Ein zweizeiliger Text.
-  - Bitte bring mir Luft.
-  - '*enable 0'
-  - '[+Luft]'
-  - Du bekommst eine Flasche Luft.
-  objects:
-  - {fileID: 1236871792}
+  - Dibedibedab!
+  objects: []
 --- !u!212 &1718953443
 SpriteRenderer:
   m_ObjectHideFlags: 0
