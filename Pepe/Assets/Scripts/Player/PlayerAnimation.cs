@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     public Animator animator;
+    public SpriteRenderer spriteRenderer;
     public PlayerMovement playerMovement;
 
     private const string IsMovingBool = "isMoving";
@@ -15,6 +16,7 @@ public class PlayerAnimation : MonoBehaviour
     {
         SetMoving();
         SetFacing();
+        CheckFlip();
     }
 
     private void SetMoving()
@@ -25,5 +27,13 @@ public class PlayerAnimation : MonoBehaviour
     private void SetFacing()
     {
         animator.SetInteger(facingInt, (int) playerMovement.currentFacing);
+    }
+
+    private void CheckFlip()
+    {
+        if (playerMovement.currentFacing == Facing.Left)
+            spriteRenderer.flipX = true;
+        else
+            spriteRenderer.flipX = false;
     }
 }

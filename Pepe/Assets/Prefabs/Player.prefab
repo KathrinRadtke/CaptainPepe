@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6388117617635746403}
+  spriteRenderer: {fileID: 6388117617635746400}
   playerMovement: {fileID: 6388117618767249882}
 --- !u!212 &6388117617635746400
 SpriteRenderer:
@@ -85,7 +86,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: a35986cd46d306f41b4547fc1b3c2c6a, type: 3}
+  m_Sprite: {fileID: 5979947586989002007, guid: 4514f4406555c0341b0dda8366c26175,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -290,7 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 1
   rb: {fileID: 6388117618767249876}
-  moveSpeed: 1
+  moveSpeed: 0.33
   currentFacing: 0
 --- !u!50 &6388117618767249876
 Rigidbody2D:
