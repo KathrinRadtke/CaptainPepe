@@ -7,6 +7,7 @@ public class Game : MonoBehaviour
     public static Game instance;
 
     public GameRefs refs;
+    public GameScenes scenes;
 
     private void Awake()
     {
