@@ -14,9 +14,12 @@ public class GameScenes : MonoBehaviour
     private IEnumerator SwitchSceneSequence(string sceneName, Vector2 playerPosition)
     {
         Game.instance.refs.GetPlayerMovement().canMove = false;
+        Game.instance.refs.GetPlayerMovement().StopMovement();
         AsyncOperation request = SceneManager.LoadSceneAsync(sceneName);
         request.allowSceneActivation = false;
-        yield return new WaitForSeconds(0.5f);
+        yield return StartCoroutine(Game.instance.refs.GetOverlay().FadeIn());
         request.allowSceneActivation = true;
+        yield return new WaitUntil(() => request.isDone);
+        yield return StartCoroutine(Game.instance.refs.GetOverlay().FadeOut());
     }
 }

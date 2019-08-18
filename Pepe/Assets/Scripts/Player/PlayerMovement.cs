@@ -21,6 +21,11 @@ public class PlayerMovement : MonoBehaviour
             Move();
     }
 
+    public void StopMovement()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
     private void Move()
     {
         rb.velocity = currentInput * moveSpeed;
