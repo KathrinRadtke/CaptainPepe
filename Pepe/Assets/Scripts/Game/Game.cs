@@ -9,6 +9,8 @@ public class Game : MonoBehaviour
     public GameRefs refs;
     public GameScenes scenes;
 
+    public GameKeys keys;
+    
     private void Awake()
     {
         if (!instance)
