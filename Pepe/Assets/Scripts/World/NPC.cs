@@ -46,8 +46,7 @@ public class NPC : Interaction
             }
             else if (lines[currentLine].StartsWith("["))
             {
-                // TODO: add or remove object from inventory
-                Debug.Log(lines[currentLine]);
+                Game.instance.keys.AddOrRemoveKeyFromLine(lines[currentLine]);
                 currentLine++;
                 OnInteraction();
             }

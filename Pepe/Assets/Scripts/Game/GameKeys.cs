@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class GameKeys : MonoBehaviour
@@ -47,6 +48,21 @@ public class GameKeys : MonoBehaviour
     }
 
     /// <summary>
+    /// Add a key.
+    /// </summary>
+    /// <param name="key"></param>
+    public void AddKey(string key)
+    {
+        if (!currentKeys.Contains(key))
+        {
+            currentKeys.Add(key);
+#if UNITY_EDITOR
+            Debug.Log("Key added: " + key + " ("+currentKeys.Count+" keys)");
+#endif
+        }
+    }
+    
+    /// <summary>
     /// Remove a key
     /// </summary>
     /// <param name="key"></param>
@@ -56,17 +72,34 @@ public class GameKeys : MonoBehaviour
         {
             currentKeys.Remove(key);
         }
+#if UNITY_EDITOR
+        Debug.Log("Key removed: " + key + " ("+currentKeys.Count+" keys)");
+#endif
     }
 
     /// <summary>
-    /// Add a key.
+    /// Adds a key from a NPCs line.
     /// </summary>
-    /// <param name="key"></param>
-    public void AddKey(string key)
+    /// <param name="line"></param>
+    public void AddOrRemoveKeyFromLine(string line)
     {
-        if (!currentKeys.Contains(key))
+        #if UNITY_EDITOR
+        if (!(line.StartsWith("[") && line.EndsWith("]")))
         {
-            currentKeys.Add(key);
-        }   
+            Debug.LogError("Error: Key is not formatted correctly! Add: [+mykey] - Remove: [-mykey]");
+            return;
+        }
+        #endif
+        line = line.Substring(1, line.Length - 2);
+        if (line[0] == '+')
+        {
+            AddKey(line.Substring(1, line.Length-1));
+        } else if (line[0] == '-')
+        {
+            RemoveKey(line.Substring(1, line.Length-1));
+        } else
+        {
+            Debug.LogError("Error: Key is not formatted correctly! Add: [+mykey] - Remove: [-mykey]");
+        }
     }
 }
