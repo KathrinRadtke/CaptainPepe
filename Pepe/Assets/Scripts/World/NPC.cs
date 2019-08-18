@@ -4,11 +4,33 @@ using UnityEngine;
 
 public class NPC : Interaction
 {
+    public string[] conditions;
+
     public string[] lines;
     public GameObject[] objects;
     private int currentLine;
     
     public override void OnInteraction()
+    {
+        bool play = true;
+
+        foreach (string condition in conditions)
+        {
+            if (!Game.instance.keys.HasKey(condition))
+            {
+                play = false;
+                break;
+            }
+        }
+
+        if(play)
+        {
+            PlayLine();
+        }
+
+    }
+
+    private void PlayLine()
     {
         if (currentLine < lines.Length)
         {
@@ -22,7 +44,7 @@ public class NPC : Interaction
                 currentLine++;
                 OnInteraction();
             }
-            else if(lines[currentLine].StartsWith("["))
+            else if (lines[currentLine].StartsWith("["))
             {
                 // TODO: add or remove object from inventory
                 Debug.Log(lines[currentLine]);
