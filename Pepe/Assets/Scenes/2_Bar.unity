@@ -486,6 +486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetSceneName: 2a_Cellar
   targetPlayerPosition: {x: 1.36, y: 1}
+  nextSceneTheme: 0
 --- !u!1 &149013630
 GameObject:
   m_ObjectHideFlags: 0
@@ -4811,6 +4812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetSceneName: 1_Hub
   targetPlayerPosition: {x: 1.85, y: -1}
+  nextSceneTheme: 2
 --- !u!61 &981281221
 BoxCollider2D:
   m_ObjectHideFlags: 0

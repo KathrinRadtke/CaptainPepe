@@ -3894,6 +3894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetSceneName: 1_Hub
   targetPlayerPosition: {x: 3, y: 1.9}
+  nextSceneTheme: 2
 --- !u!61 &981281221
 BoxCollider2D:
   m_ObjectHideFlags: 0

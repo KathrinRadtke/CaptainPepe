@@ -22,6 +22,6 @@ public class Game : MonoBehaviour
 
     private void Start()
     {
-        gameAudio.PlayTheme();
+        gameAudio.PlayTheme(MusicTheme.MainTheme);
     }
 }

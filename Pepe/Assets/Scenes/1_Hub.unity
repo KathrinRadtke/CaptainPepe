@@ -12063,6 +12063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetSceneName: 3_Wrestling
   targetPlayerPosition: {x: 1.3, y: -1.6}
+  nextSceneTheme: 4
 --- !u!212 &799688874
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12273,6 +12274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetSceneName: 2_Bar
   targetPlayerPosition: {x: 2.5, y: 1.4}
+  nextSceneTheme: 3
 --- !u!61 &981281221
 BoxCollider2D:
   m_ObjectHideFlags: 0

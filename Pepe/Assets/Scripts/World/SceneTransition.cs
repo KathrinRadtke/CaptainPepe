@@ -6,12 +6,13 @@ public class SceneTransition : MonoBehaviour
 {
     public string targetSceneName;
     public Vector2 targetPlayerPosition;
+    public MusicTheme nextSceneTheme = MusicTheme.NoChange;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag(Tags.PlayerTag))
         {
-            Game.instance.scenes.SwitchToScene(targetSceneName, targetPlayerPosition);
+            Game.instance.scenes.SwitchToScene(targetSceneName, targetPlayerPosition, nextSceneTheme);
         }
     }
 }
