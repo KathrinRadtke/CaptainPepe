@@ -11,7 +11,9 @@ public class Textbox : MonoBehaviour
     public void PlayText(string line)
     {
         Game.instance.refs.GetPlayer().GetComponent<PlayerMovement>().enabled = false;
-        
+        Game.instance.refs.GetPlayer().GetComponent<PlayerMovement>().StopMovement();
+
+
         image.enabled = true;
         text.enabled = true;
         text.text = line;
