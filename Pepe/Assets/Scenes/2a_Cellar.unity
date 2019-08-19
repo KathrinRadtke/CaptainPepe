@@ -2985,7 +2985,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32266068, y: -0.08398236}
+  m_Offset: {x: 0.33112156, y: -0.08398236}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2996,7 +2996,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3558459, y: 0.3084008}
+  m_Size: {x: 1.19227, y: 0.3084008}
   m_EdgeRadius: 0
 --- !u!114 &370957678
 MonoBehaviour:
@@ -3042,7 +3042,7 @@ MonoBehaviour:
   - '*disable 0'
   - Barf.
   - '[+straw_1]'
-  - '[destroyed]'
+  - '[+destroyed]'
   - '*disable 1'
   objects:
   - {fileID: 864194931}
@@ -3756,7 +3756,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.073718965, y: -0.10028568}
+  m_Offset: {x: 0.114004076, y: -0.10028568}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3767,7 +3767,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1148542, y: 0.36057132}
+  m_Size: {x: 1.034284, y: 0.36057132}
   m_EdgeRadius: 0
 --- !u!114 &1047751162
 MonoBehaviour:
@@ -3914,7 +3914,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.079980195, y: -0.10028568}
+  m_Offset: {x: 0.05217117, y: -0.10028568}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3925,7 +3925,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3495759, y: 0.36057132}
+  m_Size: {x: 1.2939578, y: 0.36057132}
   m_EdgeRadius: 0
 --- !u!114 &1444205617
 MonoBehaviour:
