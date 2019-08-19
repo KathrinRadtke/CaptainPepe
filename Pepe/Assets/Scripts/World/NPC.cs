@@ -56,6 +56,18 @@ public class NPC : Interaction
                 currentLine++;
                 OnInteraction();
             }
+            else if (lines[currentLine].StartsWith("w_"))
+            {
+                WrestlingMatch wrestlingMatch = GetComponent<WrestlingMatch>();
+                string line = "";
+                if(wrestlingMatch)
+                    line = wrestlingMatch.OnLine(lines[currentLine]);
+
+                if(!string.IsNullOrEmpty(line))
+                    Game.instance.refs.GetTextbox().PlayText(line);
+
+                currentLine++;
+            }
             else
             {
                 Game.instance.refs.GetTextbox().PlayText(lines[currentLine]);

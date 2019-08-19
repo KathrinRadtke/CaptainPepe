@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameScenes : MonoBehaviour
 {
-    public void SwitchToScene(string sceneName, Vector2 playerPosition, MusicTheme nextTheme)
+    public void SwitchToScene(string sceneName, Vector2 playerPosition, MusicTheme nextTheme = MusicTheme.NoChange)
     {
         StartCoroutine(SwitchSceneSequence(sceneName, playerPosition, nextTheme));
 
