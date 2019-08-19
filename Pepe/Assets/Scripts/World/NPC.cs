@@ -18,9 +18,9 @@ public class NPC : Interaction
 
         foreach (string condition in conditions)
         {
-            if(condition.StartsWith(negativeChar) && Game.instance.keys.HasKey(condition.Substring(1)))
-            {
-                play = false;
+            if (condition.StartsWith(negativeChar) && !Game.instance.keys.HasKey(condition.Substring(1)))
+            {                
+                play = true;
                 break;
             }
             else if (!Game.instance.keys.HasKey(condition))
