@@ -49,7 +49,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag(Tags.InteractionTag) && currentInteraction.gameObject == collision.gameObject)
+        if (collision.CompareTag(Tags.InteractionTag) && currentInteraction && currentInteraction.gameObject == collision.gameObject)
         {
             currentInteraction = null;
         }
