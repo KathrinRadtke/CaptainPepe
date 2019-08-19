@@ -9,6 +9,8 @@ public class NPC : Interaction
     public string[] lines;
     public GameObject[] objects;
     private int currentLine;
+
+    private const string negativeChar = "!";
     
     public override void OnInteraction()
     {
@@ -16,7 +18,12 @@ public class NPC : Interaction
 
         foreach (string condition in conditions)
         {
-            if (!Game.instance.keys.HasKey(condition))
+            if(condition.StartsWith(negativeChar) && Game.instance.keys.HasKey(condition.Substring(1)))
+            {
+                play = false;
+                break;
+            }
+            else if (!Game.instance.keys.HasKey(condition))
             {
                 play = false;
                 break;
