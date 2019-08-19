@@ -277,8 +277,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 51827164}
-  m_RootOrder: 0
+  m_Father: {fileID: 73333735}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &44426339
 MonoBehaviour:
@@ -307,8 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCurrentlyInteractable: 1
-  conditions:
-  - Luft
+  conditions: []
   lines:
   - '[-Erdbeerluft]'
   - Pardner.
@@ -371,8 +370,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 44426338}
+  m_Children: []
   m_Father: {fileID: 73333735}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -391,15 +389,17 @@ MonoBehaviour:
   isCurrentlyInteractable: 1
   conditions:
   - Erdbeerluft
-  - '!Luft'
   lines:
   - Du hast ja noch Erdbeerluft!
   - Gib sie mir! Hier hast du ein Glas langweilige Luft!
   - '[+Luft]'
   - '- Karl tauscht deine Erdbeerluft gegen pure Luft. -'
   - '*enable 0'
+  - '[+Luft]'
+  - '*disable 1'
   objects:
   - {fileID: 44426337}
+  - {fileID: 51827163}
 --- !u!114 &51827167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,16 +415,19 @@ MonoBehaviour:
   isCurrentlyInteractable: 1
   conditions:
   - '!Erdbeerluft'
-  - '!Luft'
   lines:
   - Howdy!
   - "Willkommen in Karls Erd ... \xE4h ... regul\xE4rer Kneipe."
   - "Schn\xFCff. Ich bin Karl."
   - Hier, ein Glas Luft ... Pure Luft ...
   - "Ohne den Geschmack der s\xFC\xDFen, roten , ... schn\xFCff."
-  - '[+Luft]'
   - '- du bekommst ein Glas pure Luft-'
-  objects: []
+  - '*enable 0'
+  - '[+Luft]'
+  - '*disable 1'
+  objects:
+  - {fileID: 44426337}
+  - {fileID: 51827163}
 --- !u!61 &51827168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -496,6 +499,7 @@ Transform:
   m_Children:
   - {fileID: 1673326169}
   - {fileID: 51827164}
+  - {fileID: 44426338}
   m_Father: {fileID: 1879679856}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
