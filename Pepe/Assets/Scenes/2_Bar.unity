@@ -699,7 +699,7 @@ MonoBehaviour:
   conditions:
   - Luft
   lines:
-  - Ist das etwa Luft!
+  - Ist das etwa Luft?!
   - Her damit!
   - '- Du gibst Pepe die Luft -'
   - Gluckgluckgluckgluck ... hicks.
@@ -6337,7 +6337,7 @@ MonoBehaviour:
   conditions:
   - Luft
   lines:
-  - Ist das etwa Luft!
+  - Ist das etwa Luft?!
   - Her damit!
   - '- Du gibst Pepe die Luft -'
   - Gluckgluckgluckgluck ... hicks.
