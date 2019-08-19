@@ -28,9 +28,13 @@ public class PlayerInteraction : MonoBehaviour
     {
         if(Input.GetButtonDown(InputStrings.InteractButton))
         {
-            if(currentInteraction && currentInteraction.isCurrentlyInteractable)
+            if(currentInteraction)
             {
-                currentInteraction.OnInteraction();
+                foreach(Interaction interaction in currentInteraction.GetComponents<Interaction>())
+                {
+                    if(interaction.isCurrentlyInteractable)
+                        interaction.OnInteraction();
+                }                
             }
         }
     }
