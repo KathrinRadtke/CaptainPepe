@@ -276,6 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetSceneName: 2_Bar
   targetPlayerPosition: {x: 4.2, y: -0.075}
+  nextSceneTheme: 0
 --- !u!1 &223029782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2897,8 +2898,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 370957674}
-  - component: {fileID: 370957676}
   - component: {fileID: 370957677}
+  - component: {fileID: 370957676}
+  - component: {fileID: 370957678}
+  - component: {fileID: 370957675}
+  - component: {fileID: 370957679}
   m_Layer: 0
   m_Name: IA_Strawberries_1
   m_TagString: Untagged
@@ -2920,6 +2924,30 @@ Transform:
   m_Father: {fileID: 1879679856}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370957675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370957673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e977b0fe52555740a7358beba3c3719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyInteractable: 1
+  conditions:
+  - straw_2
+  - '!straw_3'
+  lines:
+  - '*disable 0'
+  - Lecker!
+  - '[+straw_1]'
+  - '*disable 1'
+  objects:
+  - {fileID: 864194931}
+  - {fileID: 370957673}
 --- !u!114 &370957676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2933,10 +2961,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCurrentlyInteractable: 1
-  conditions: []
+  conditions:
+  - '!straw_2'
+  - '!straw_3'
   lines:
   - '*disable 0'
-  - Schmatz.
+  - Sehr lecker!
+  - '[+straw_1]'
   - '*disable 1'
   objects:
   - {fileID: 864194931}
@@ -2967,6 +2998,55 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3558459, y: 0.3084008}
   m_EdgeRadius: 0
+--- !u!114 &370957678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370957673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e977b0fe52555740a7358beba3c3719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyInteractable: 1
+  conditions:
+  - '!straw_2'
+  - straw_3
+  lines:
+  - '*disable 0'
+  - Lecker!
+  - '[+straw_1]'
+  - '*disable 1'
+  objects:
+  - {fileID: 864194931}
+  - {fileID: 370957673}
+--- !u!114 &370957679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370957673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e977b0fe52555740a7358beba3c3719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyInteractable: 1
+  conditions:
+  - straw_2
+  - straw_3
+  lines:
+  - '*disable 0'
+  - Barf.
+  - '[+straw_1]'
+  - '[destroyed]'
+  - '*disable 1'
+  objects:
+  - {fileID: 864194931}
+  - {fileID: 370957673}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,8 +3717,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1047751160}
-  - component: {fileID: 1047751162}
   - component: {fileID: 1047751161}
+  - component: {fileID: 1047751162}
+  - component: {fileID: 1047751165}
+  - component: {fileID: 1047751164}
+  - component: {fileID: 1047751163}
   m_Layer: 0
   m_Name: IA_Strawberries_2
   m_TagString: Untagged
@@ -3699,10 +3782,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCurrentlyInteractable: 1
-  conditions: []
+  conditions:
+  - '!straw_1'
+  - '!straw_3'
   lines:
   - '*disable 0'
-  - Mjam.
+  - Sehr lecker!
+  - '[+straw_2]'
+  - '*disable 1'
+  objects:
+  - {fileID: 1855780268}
+  - {fileID: 1047751159}
+--- !u!114 &1047751163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047751159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e977b0fe52555740a7358beba3c3719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyInteractable: 1
+  conditions:
+  - straw_1
+  - straw_3
+  lines:
+  - '*disable 0'
+  - Barf
+  - '[+straw_2]'
+  - '[+destroyed]'
+  - '*disable 1'
+  objects:
+  - {fileID: 1855780268}
+  - {fileID: 1047751159}
+--- !u!114 &1047751164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047751159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e977b0fe52555740a7358beba3c3719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyInteractable: 1
+  conditions:
+  - '!straw_1'
+  - straw_3
+  lines:
+  - '*disable 0'
+  - Lecker!
+  - '[+straw_2]'
+  - '*disable 1'
+  objects:
+  - {fileID: 1855780268}
+  - {fileID: 1047751159}
+--- !u!114 &1047751165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047751159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e977b0fe52555740a7358beba3c3719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyInteractable: 1
+  conditions:
+  - straw_1
+  - '!straw_3'
+  lines:
+  - '*disable 0'
+  - Lecker!
+  - '[+straw_2]'
   - '*disable 1'
   objects:
   - {fileID: 1855780268}
@@ -3716,8 +3875,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1444205615}
-  - component: {fileID: 1444205617}
   - component: {fileID: 1444205616}
+  - component: {fileID: 1444205617}
+  - component: {fileID: 1444205620}
+  - component: {fileID: 1444205619}
+  - component: {fileID: 1444205618}
   m_Layer: 0
   m_Name: IA_Strawberries_3
   m_TagString: Untagged
@@ -3778,10 +3940,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCurrentlyInteractable: 1
-  conditions: []
+  conditions:
+  - '!straw_1'
+  - '!straw_2'
   lines:
   - '*disable 0'
-  - "R\xFClps."
+  - Sehr lecker!
+  - '[+straw_3]'
+  - '*disable 1'
+  objects:
+  - {fileID: 2102761570}
+  - {fileID: 1444205614}
+--- !u!114 &1444205618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444205614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e977b0fe52555740a7358beba3c3719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyInteractable: 1
+  conditions:
+  - straw_1
+  - straw_2
+  lines:
+  - '*disable 0'
+  - Lecker!
+  - '[+straw_3]'
+  - '[+destroyed]'
+  - '*disable 1'
+  objects:
+  - {fileID: 2102761570}
+  - {fileID: 1444205614}
+--- !u!114 &1444205619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444205614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e977b0fe52555740a7358beba3c3719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyInteractable: 1
+  conditions:
+  - '!straw_1'
+  - straw_2
+  lines:
+  - '*disable 0'
+  - Lecker!
+  - '[+straw_3]'
+  - '*disable 1'
+  objects:
+  - {fileID: 2102761570}
+  - {fileID: 1444205614}
+--- !u!114 &1444205620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444205614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e977b0fe52555740a7358beba3c3719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyInteractable: 1
+  conditions:
+  - straw_1
+  - '!straw_2'
+  lines:
+  - '*disable 0'
+  - Lecker!
+  - '[+straw_3]'
   - '*disable 1'
   objects:
   - {fileID: 2102761570}
