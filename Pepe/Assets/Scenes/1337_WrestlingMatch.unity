@@ -636,14 +636,14 @@ MonoBehaviour:
   conditions: []
   lines:
   - A wild Verenator appears!
-  - Nightmariana sends Pepe into battle.
-  - Pepe is flexing...
+  - Nightmariana sends El Pepe into battle.
+  - El Pepe is flexing...
   - w_pa_4
   - Ouch, that hurt!
   - The Verenator prepares a deadly chair...
   - w_va_5
-  - Pepes back holds, but is not the same as before.
-  - Pepe looks less angry, what's going on?
+  - El Pepes back holds, but is not the same as before.
+  - El Pepe looks less angry, what's going on?
   - w_pa_-3
   - Did... did he just kiss her?
   - Omg it seems like they're falling for each other!
@@ -670,7 +670,7 @@ MonoBehaviour:
   enemyMaxHp: 20
   playerMaxHp: 16
   enemyName: The Verenator
-  playerName: Pepe pewpew
+  playerName: El Pepe
   enemyNameText: {fileID: 1159794253}
   playerNameText: {fileID: 1744753056}
   enemyBackground: {fileID: 2110723289}
@@ -1217,7 +1217,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: PepePewpew
+  m_Text: El Pepe
 --- !u!222 &1744753057
 CanvasRenderer:
   m_ObjectHideFlags: 0

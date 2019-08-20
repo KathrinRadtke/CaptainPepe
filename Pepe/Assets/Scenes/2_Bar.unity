@@ -341,7 +341,7 @@ MonoBehaviour:
   - "Schn\xFCff. Ich bin Karl."
   - Hier, ein Glas Luft ... Pure Luft ...
   - "Ohne den Geschmack der s\xFC\xDFen, roten , ... schn\xFCff."
-  - '- du bekommst ein Glas pure Luft-'
+  - '- du bekommst ein Glas pure Luft -'
   - '*enable 0'
   - '[+Luft]'
   - '*disable 1'
@@ -687,12 +687,12 @@ MonoBehaviour:
   - '!Erdbeerluft'
   - '!Luft'
   lines:
-  - Was? Du suchst jemanden, der fluchen kann!
+  - Was? Du suchst jemanden, der fluchen kann!?
   - Oh ja, das konnte ich.
   - Und wie ich das konnte!
-  - Bis Karl eines Tages auf den Trichter mit den Erdberen gekommen ist ...
+  - Bis Karl eines Tages auf den Trichter mit den Erdbeeren gekommen ist ...
   - Diese Erdbeerluft hat mich weich werden lassen.
-  - Ich brauche endlich wieder richtige Luft zum atmen!
+  - Ich brauche endlich wieder richtige Luft zum Atmen!
   - '[+Pepe]'
   - '*enable 0'
   - '*disable 1'
@@ -1663,7 +1663,7 @@ MonoBehaviour:
   - Andere Sorten Luft?
   - '"Pure" Luft?'
   - Niemals. Gibt es nicht.
-  - Solange ich auf meinem Berg Erdbeeren sitze, wird es nur Erdbeerluft geben
+  - Solange ich auf meinem Berg Erdbeeren sitze, wird es nur Erdbeerluft geben.
   objects: []
 --- !u!114 &216187873
 MonoBehaviour:
@@ -4318,7 +4318,7 @@ MonoBehaviour:
   isCurrentlyInteractable: 1
   conditions: []
   lines:
-  - Ich kann Musik auf meiner Nase machen
+  - Ich kann Musik auf meiner Nase machen!
   objects: []
 --- !u!212 &560192129
 SpriteRenderer:

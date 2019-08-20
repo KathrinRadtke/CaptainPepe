@@ -13889,7 +13889,7 @@ MonoBehaviour:
   isCurrentlyInteractable: 1
   conditions: []
   lines:
-  - "Was sagts du? Du bist Kapit\xE4nin?"
+  - "Was sagst du? Du bist Kapit\xE4nin?"
   - Und wo ist dann deine Crew?
   - Ohne Crew kein Boot!
   - '*enable 0'
