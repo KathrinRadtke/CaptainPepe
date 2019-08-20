@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2a_Cellar.unity
     guid: d601583595138c84db9e05bc16a010a2
+  - enabled: 1
+    path: Assets/Scenes/1337_WrestlingMatch.unity
+    guid: d3bb073aab5545542bf89737774eb589
   m_configObjects: {}
