@@ -310,8 +310,8 @@ MonoBehaviour:
   conditions:
   - Erdbeerluft
   lines:
-  - Du hast ja noch Erdbeerluft!
-  - Gib sie mir! Hier hast du ein Glas langweilige Luft!
+  - "Schn\xFCff ... Hast du da ...? Erdbeerluft!!!!"
+  - Gib her! Hier hast du langweilige Luft!
   - '[+Luft]'
   - '- Karl tauscht deine Erdbeerluft gegen pure Luft. -'
   - '*enable 0'
@@ -3969,6 +3969,7 @@ MonoBehaviour:
   isCurrentlyInteractable: 1
   conditions: []
   lines:
+  - Hinter der Jukebox verbirgt sich ein Geheimgang!
   - '*enable 0'
   - '*enable 1'
   - '[+Secret]'
@@ -4065,7 +4066,7 @@ MonoBehaviour:
   conditions: []
   lines:
   - Du bist es!
-  - Keine Sorge, geh ruhig schon mal ohne dich los!
+  - Keine Sorge, geh ruhig schon mal ohne mich los!
   - Sobald du mich brauchst, werde ich da sein!
   objects: []
 --- !u!61 &496678493

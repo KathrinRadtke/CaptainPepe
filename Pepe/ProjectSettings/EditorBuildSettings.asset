@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1337_WrestlingMatch.unity
     guid: d3bb073aab5545542bf89737774eb589
+  - enabled: 1
+    path: Assets/Scenes/4_End.unity
+    guid: 76b1e86939507ef4e9b7981452ceadbf
   m_configObjects: {}
