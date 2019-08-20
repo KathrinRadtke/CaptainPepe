@@ -13814,7 +13814,7 @@ MonoBehaviour:
   lines:
   - Du brauchst eine Crew!
   - "Ein herausragender K\xE4mpfer ist das Mindeste!"
-  - Und ein flucchender Seemann!
+  - Und ein fluchender Seemann!
   objects: []
 --- !u!61 &1913325441
 BoxCollider2D:
