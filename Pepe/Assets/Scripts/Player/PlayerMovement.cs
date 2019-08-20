@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsMoving()
     {
-        return rb.velocity.magnitude != 0f;
+        return currentInput.magnitude != 0f;
     }
 
     public Vector3 GetCurrentFacingVectorDirection()
