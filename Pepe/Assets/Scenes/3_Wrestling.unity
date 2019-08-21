@@ -5809,7 +5809,6 @@ MonoBehaviour:
   - PepeTeam
   lines:
   - Du bist nun bereit, den Ring zu betreten!
-  - '[+VerenaTeam]'
   - '*disable 0'
   objects:
   - {fileID: 1265431985}
