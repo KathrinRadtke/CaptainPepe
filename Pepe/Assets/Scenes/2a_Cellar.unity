@@ -3637,6 +3637,7 @@ GameObject:
   - component: {fileID: 370957678}
   - component: {fileID: 370957675}
   - component: {fileID: 370957679}
+  - component: {fileID: 370957680}
   m_Layer: 0
   m_Name: IA_Strawberries_1
   m_TagString: Untagged
@@ -3781,6 +3782,20 @@ MonoBehaviour:
   objects:
   - {fileID: 864194931}
   - {fileID: 370957673}
+--- !u!114 &370957680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370957673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85e76d48cebee04f80ee266fbaad0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: straw_1
+  invert: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4126,6 +4141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 864194932}
   - component: {fileID: 864194933}
+  - component: {fileID: 864194934}
   m_Layer: 0
   m_Name: Strawberries_1
   m_TagString: Untagged
@@ -4203,6 +4219,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &864194934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864194931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85e76d48cebee04f80ee266fbaad0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: straw_1
+  invert: 1
 --- !u!1 &888039723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,6 +4358,7 @@ GameObject:
   - component: {fileID: 1047751165}
   - component: {fileID: 1047751164}
   - component: {fileID: 1047751163}
+  - component: {fileID: 1047751166}
   m_Layer: 0
   m_Name: IA_Strawberries_2
   m_TagString: Untagged
@@ -4472,6 +4503,20 @@ MonoBehaviour:
   objects:
   - {fileID: 1855780268}
   - {fileID: 1047751159}
+--- !u!114 &1047751166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047751159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85e76d48cebee04f80ee266fbaad0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: straw_2
+  invert: 1
 --- !u!1 &1131041001
 GameObject:
   m_ObjectHideFlags: 0
@@ -4646,6 +4691,7 @@ GameObject:
   - component: {fileID: 1444205620}
   - component: {fileID: 1444205619}
   - component: {fileID: 1444205618}
+  - component: {fileID: 1444205621}
   m_Layer: 0
   m_Name: IA_Strawberries_3
   m_TagString: Untagged
@@ -4790,6 +4836,20 @@ MonoBehaviour:
   objects:
   - {fileID: 2102761570}
   - {fileID: 1444205614}
+--- !u!114 &1444205621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444205614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85e76d48cebee04f80ee266fbaad0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: straw_3
+  invert: 1
 --- !u!1 &1451250046
 GameObject:
   m_ObjectHideFlags: 0
@@ -5398,6 +5458,7 @@ GameObject:
   - component: {fileID: 1855780269}
   - component: {fileID: 1855780271}
   - component: {fileID: 1855780270}
+  - component: {fileID: 1855780272}
   m_Layer: 0
   m_Name: Strawberries_2
   m_TagString: Untagged
@@ -5804,6 +5865,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1855780272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855780268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85e76d48cebee04f80ee266fbaad0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: straw_2
+  invert: 1
 --- !u!1 &1879679855
 GameObject:
   m_ObjectHideFlags: 0
@@ -6386,6 +6461,7 @@ GameObject:
   - component: {fileID: 2102761571}
   - component: {fileID: 2102761573}
   - component: {fileID: 2102761572}
+  - component: {fileID: 2102761574}
   m_Layer: 0
   m_Name: Strawberries_3
   m_TagString: Untagged
@@ -6902,6 +6978,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &2102761574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102761570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85e76d48cebee04f80ee266fbaad0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: straw_3
+  invert: 1
 --- !u!1 &2137138928
 GameObject:
   m_ObjectHideFlags: 0
