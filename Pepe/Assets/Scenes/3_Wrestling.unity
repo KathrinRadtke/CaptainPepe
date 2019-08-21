@@ -3538,7 +3538,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00335747, y: -0.058196157}
+  m_Offset: {x: 0.00335747, y: -0.02957049}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3549,7 +3549,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09206653, y: 0.23125607}
+  m_Size: {x: 0.09206653, y: 0.17400473}
   m_EdgeRadius: 0
 --- !u!1 &475853700
 GameObject:
@@ -4264,7 +4264,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00335747, y: -0.058196157}
+  m_Offset: {x: 0.00335747, y: -0.036133975}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4275,7 +4275,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09206653, y: 0.23125607}
+  m_Size: {x: 0.09206653, y: 0.1871317}
   m_EdgeRadius: 0
 --- !u!1 &711381238
 GameObject:
@@ -6299,7 +6299,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00335747, y: -0.058196157}
+  m_Offset: {x: 0.00335747, y: -0.030071706}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6310,7 +6310,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09206653, y: 0.23125607}
+  m_Size: {x: 0.09206653, y: 0.17500716}
   m_EdgeRadius: 0
 --- !u!1 &1448880584
 GameObject:
@@ -6463,7 +6463,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00335747, y: -0.058196157}
+  m_Offset: {x: 0.00335747, y: -0.028139204}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6474,7 +6474,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09206653, y: 0.23125607}
+  m_Size: {x: 0.09206653, y: 0.17114216}
   m_EdgeRadius: 0
 --- !u!1 &1539757276
 GameObject:
