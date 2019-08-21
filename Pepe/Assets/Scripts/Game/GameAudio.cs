@@ -10,6 +10,7 @@ public class GameAudio : MonoBehaviour
     public AudioClip barTheme;
     public AudioClip battleTheme;
     public AudioClip switchSceneSound;
+    public AudioClip funfare;
 
     public void PlayTheme(MusicTheme theme)
     {
@@ -39,6 +40,20 @@ public class GameAudio : MonoBehaviour
     public void PlaySceneSwitchSound()
     {
         PlaySoundOneShot(switchSceneSound);
+    }
+
+    public void PlayFunfare()
+    {
+        StartCoroutine(PlayFunfareSequence());
+    }
+
+    private IEnumerator PlayFunfareSequence()
+    {
+        audioSource.Stop();
+        yield return null;
+        PlaySoundOneShot(funfare);
+        yield return new WaitForSeconds(funfare.length);
+        audioSource.Play();
     }
 
     private void PlayMusic(AudioClip music)
