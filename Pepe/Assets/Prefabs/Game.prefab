@@ -197,6 +197,7 @@ MonoBehaviour:
   barTheme: {fileID: 8300000, guid: 48ec75c483e70c64aa9057944caacb83, type: 3}
   battleTheme: {fileID: 8300000, guid: 9db2dfdad09791a4e8e39f13f59e6cc5, type: 3}
   switchSceneSound: {fileID: 8300000, guid: 759beabcdbad3e649b8d47e5c7d30e0e, type: 3}
+  funfare: {fileID: 8300000, guid: 794343232f55d564ead74f044d3b3b11, type: 3}
 --- !u!114 &6855008270492797446
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class NPC : Interaction
     private int currentLine;
 
     private const string negativeChar = "!";
+    private const string funfare = "FUN";
     
     public override void OnInteraction()
     {
@@ -67,6 +68,12 @@ public class NPC : Interaction
                     Game.instance.refs.GetTextbox().PlayText(line);
 
                 currentLine++;
+            }
+            else if (lines[currentLine] == funfare)
+            {
+                Game.instance.gameAudio.PlayFunfare();
+                currentLine++;
+                OnInteraction();
             }
             else
             {
