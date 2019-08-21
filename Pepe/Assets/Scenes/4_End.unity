@@ -200,10 +200,18 @@ MonoBehaviour:
   isCurrentlyInteractable: 1
   conditions: []
   lines:
-  - Das war's auch schon.
-  - Hier kommt irgendein schnulziger Text.
-  - "\xDCber Hochzeiten und H\xE4fen und so."
-  - "Was wei\xDF denn ich."
+  - Und so begeben sich unsere Helden auf die Reise.
+  - Eine Reise ins Ungewisse.
+  - "Ruhige Gew\xE4sser werden sie erwarten, aber auch rauhe See."
+  - "Und auch wenn es f\xFCr diese Reise keinen Sextanten gibt."
+  - "Zusammen k\xF6nnen sie alles schaffen! <"
+  - '...'
+  - Cpt. Mariana
+  - A game by Studio Fizjam
+  - '...'
+  - '...'
+  - Jetzt aber wirklich erstmal tief durchatmen.
+  - '- The end -'
   objects: []
 --- !u!61 &149013633
 BoxCollider2D:
