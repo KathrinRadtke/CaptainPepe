@@ -294,7 +294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137602303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.279, y: 1.024, z: 0}
+  m_LocalPosition: {x: 1.196, y: 1.024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 300052394}
@@ -332,7 +332,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0016921163, y: -0.032553338}
+  m_Offset: {x: -0.0016921163, y: -0.04657152}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -343,7 +343,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.12277329, y: 0.22510667}
+  m_Size: {x: 0.12277329, y: 0.253143}
   m_EdgeRadius: 0
 --- !u!1 &149013630
 GameObject:
@@ -1192,8 +1192,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 4, y: 2, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 4
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1201,8 +1201,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 5, y: 2, z: 0}
     second:
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 1
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -3223,7 +3223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244273438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.726, y: 0.369, z: 0}
+  m_LocalPosition: {x: 0.874, y: 0.369, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 507725545}
@@ -3481,7 +3481,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0049092174, y: -0.05607274}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3492,7 +3492,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.10249221, y: 0.27214545}
   m_EdgeRadius: 0
 --- !u!1 &430332363
 GameObject:
@@ -4287,6 +4287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 711381239}
   - component: {fileID: 711381240}
+  - component: {fileID: 711381241}
   m_Layer: 0
   m_Name: Wrestler_1_Sprite
   m_TagString: Untagged
@@ -4302,7 +4303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711381238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.47, y: 1.024, z: 0}
+  m_LocalPosition: {x: 1.418, y: 1.024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 923609480}
@@ -4357,6 +4358,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &711381241
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711381238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &750451570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5493,6 +5520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162106044}
   - component: {fileID: 1162106045}
+  - component: {fileID: 1162106046}
   m_Layer: 0
   m_Name: Wrestler_2_Sprite
   m_TagString: Untagged
@@ -5508,7 +5536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162106043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.279, y: 1.024, z: 0}
+  m_LocalPosition: {x: 1.196, y: 1.024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 923609480}
@@ -5563,6 +5591,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1162106046
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162106043}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1199003749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6139,12 +6193,14 @@ MonoBehaviour:
   - Verena ist anscheinend gerade aus dem Haus gelaufen.
   - "Sie ist so schnell, man k\xF6nnte meinen, sie sei teleportiert worden."
   - "Vielleicht wartet sie jetzt zuf\xE4llig am Ring?"
+  - '*enable 4'
   - '*disable 2'
   objects:
   - {fileID: 149013630}
   - {fileID: 836448495}
   - {fileID: 923609479}
   - {fileID: 1265431985}
+  - {fileID: 841796587}
 --- !u!61 &1407070581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6266,6 +6322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1448880585}
   - component: {fileID: 1448880586}
+  - component: {fileID: 1448880587}
   m_Layer: 0
   m_Name: Wrestler_3_Sprite
   m_TagString: Untagged
@@ -6336,6 +6393,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1448880587
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448880584}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1518800246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,7 +6502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539757276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.47, y: 1.024, z: 0}
+  m_LocalPosition: {x: 1.418, y: 1.024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 300052394}
@@ -7079,16 +7162,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6388117617635746400, guid: 69d773229696abd41b1bb24babcd6bf6,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -680804067
-      objectReference: {fileID: 0}
-    - target: {fileID: 6388117617635746400, guid: 69d773229696abd41b1bb24babcd6bf6,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69d773229696abd41b1bb24babcd6bf6, type: 3}
