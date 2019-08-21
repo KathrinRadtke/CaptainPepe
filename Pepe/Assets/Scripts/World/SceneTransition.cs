@@ -12,6 +12,9 @@ public class SceneTransition : MonoBehaviour
     {
         if(collision.CompareTag(Tags.PlayerTag))
         {
+            NPC npc = GetComponent<NPC>();
+            if (npc)
+                npc.OnInteraction();
             Game.instance.scenes.SwitchToScene(targetSceneName, targetPlayerPosition, nextSceneTheme);
         }
     }
