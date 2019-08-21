@@ -12,7 +12,8 @@ public class NPC : Interaction
 
     private const string negativeChar = "!";
     private const string funfare = "FUN";
-    
+    private const string pickup = "PICKUP";
+
     public override void OnInteraction()
     {
         bool play = true;
@@ -72,6 +73,12 @@ public class NPC : Interaction
             else if (lines[currentLine] == funfare)
             {
                 Game.instance.gameAudio.PlayFunfare();
+                currentLine++;
+                OnInteraction();
+            }
+            else if (lines[currentLine] == pickup)
+            {
+                Game.instance.gameAudio.PlayPickupSound();
                 currentLine++;
                 OnInteraction();
             }

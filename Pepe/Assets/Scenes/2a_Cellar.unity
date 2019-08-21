@@ -3757,6 +3757,7 @@ MonoBehaviour:
   - '!straw_3'
   lines:
   - '*disable 0'
+  - PICKUP
   - Lecker!
   - '[+straw_1]'
   - '*disable 1'
@@ -3781,6 +3782,7 @@ MonoBehaviour:
   - '!straw_3'
   lines:
   - '*disable 0'
+  - PICKUP
   - Sehr lecker!
   - '[+straw_1]'
   - '*disable 1'
@@ -3855,6 +3857,7 @@ MonoBehaviour:
   - straw_3
   lines:
   - '*disable 0'
+  - PICKUP
   - Barf.
   - '[+straw_1]'
   - '[+destroyed]'
@@ -4504,6 +4507,7 @@ MonoBehaviour:
   - '!straw_3'
   lines:
   - '*disable 0'
+  - PICKUP
   - Sehr lecker!
   - '[+straw_2]'
   - '*disable 1'
@@ -4528,6 +4532,7 @@ MonoBehaviour:
   - straw_3
   lines:
   - '*disable 0'
+  - PICKUP
   - Barf.
   - '[+straw_2]'
   - '[+destroyed]'
@@ -4553,6 +4558,7 @@ MonoBehaviour:
   - straw_3
   lines:
   - '*disable 0'
+  - PICKUP
   - Lecker!
   - '[+straw_2]'
   - '*disable 1'
@@ -4837,6 +4843,7 @@ MonoBehaviour:
   - '!straw_2'
   lines:
   - '*disable 0'
+  - PICKUP
   - Sehr lecker!
   - '[+straw_3]'
   - '*disable 1'
@@ -4886,6 +4893,7 @@ MonoBehaviour:
   - straw_2
   lines:
   - '*disable 0'
+  - PICKUP
   - Lecker!
   - '[+straw_3]'
   - '*disable 1'
@@ -4910,6 +4918,7 @@ MonoBehaviour:
   - '!straw_2'
   lines:
   - '*disable 0'
+  - PICKUP
   - Lecker!
   - '[+straw_3]'
   - '*disable 1'

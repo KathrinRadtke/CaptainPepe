@@ -11,6 +11,7 @@ public class GameAudio : MonoBehaviour
     public AudioClip battleTheme;
     public AudioClip switchSceneSound;
     public AudioClip funfare;
+    public AudioClip pickupSound;
 
     public void PlayTheme(MusicTheme theme)
     {
@@ -40,6 +41,11 @@ public class GameAudio : MonoBehaviour
     public void PlaySceneSwitchSound()
     {
         PlaySoundOneShot(switchSceneSound);
+    }
+
+    public void PlayPickupSound()
+    {
+        PlaySoundOneShot(pickupSound);
     }
 
     public void PlayFunfare()
